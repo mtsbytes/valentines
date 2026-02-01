@@ -5,8 +5,8 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 // 18 images
-const repoName = "/valentines"; // Your repo name
-const images = Array.from({ length: 36 }, (_, i) => `${repoName}/game-photos/${i + 1}.jpg`);
+const BASE_PATH = '/valentines';
+const images = Array.from({ length: 18 }, (_, i) => `${BASE_PATH}/game-photos/${i + 1}.jpg`);
 
 // Create 18 pairs of images (36 images in total)
 const imagePairs = images.flatMap((image) => [image, image]);
