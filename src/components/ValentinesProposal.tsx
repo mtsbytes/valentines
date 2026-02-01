@@ -10,8 +10,11 @@ const playfairDisplay = Playfair_Display({
 });
 
 // 36 images
-const repoName = "/valentines"; // Your repo name
-const images = Array.from({ length: 36 }, (_, i) => `${repoName}/game-photos/${i + 1}.jpg`);
+const BASE_PATH = '/valentines';
+
+// For ValentinesProposal.tsx (36 images)
+const images = Array.from({ length: 36 }, (_, i) => `${BASE_PATH}/game-photos/${i + 1}.jpg`);
+
 
 export default function ValentinesProposal() {
   const [step, setStep] = useState(0);
@@ -99,7 +102,7 @@ export default function ValentinesProposal() {
               Will you be my Valentine?
             </h2>
             <Image
-              src="/sad_hamster.png"
+              src="/valentines/sad_hamster.png"
               alt="Sad Hamster"
               width={200}
               height={200}
@@ -141,7 +144,7 @@ export default function ValentinesProposal() {
             Thank you for accepting, I love you! 💕
             <p className="text-sm mt-4">With love, your hubby baby Thawfiq!!! 💌</p>
             <Image
-              src="/hamster_jumping.gif"
+              src="/valentines/hamster_jumping.gif"
               alt="Hamster Feliz"
               width={200}
               height={200}
