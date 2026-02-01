@@ -10,44 +10,8 @@ const playfairDisplay = Playfair_Display({
 });
 
 // 36 images
-const images = [
-  "/game-photos/1.jpg",
-  "/game-photos/2.jpg",
-  "/game-photos/3.jpg",
-  "/game-photos/4.jpg",
-  "/game-photos/5.jpg",
-  "/game-photos/6.jpg",
-  "/game-photos/7.jpg",
-  "/game-photos/8.jpg",
-  "/game-photos/9.jpg",
-  "/game-photos/10.jpg",
-  "/game-photos/11.jpg",
-  "/game-photos/12.jpg",
-  "/game-photos/13.jpg",
-  "/game-photos/14.jpg",
-  "/game-photos/15.jpg",
-  "/game-photos/16.jpg",
-  "/game-photos/17.jpg",
-  "/game-photos/18.jpg",
-  "/game-photos/19.jpg",
-  "/game-photos/20.jpg",
-  "/game-photos/21.jpg",
-  "/game-photos/22.jpg",
-  "/game-photos/23.jpg",
-  "/game-photos/24.jpg",
-  "/game-photos/25.jpg",
-  "/game-photos/26.jpg",
-  "/game-photos/27.jpg",
-  "/game-photos/28.jpg",
-  "/game-photos/29.jpg",
-  "/game-photos/30.jpg",
-  "/game-photos/31.jpg",
-  "/game-photos/32.jpg",
-  "/game-photos/33.jpg",
-  "/game-photos/34.jpg",
-  "/game-photos/35.jpg",
-  "/game-photos/36.jpg",
-];
+const repoName = "/valentines"; // Your repo name
+const images = Array.from({ length: 36 }, (_, i) => `${repoName}/game-photos/${i + 1}.jpg`);
 
 export default function ValentinesProposal() {
   const [step, setStep] = useState(0);
